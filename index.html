@@ -7,7 +7,7 @@
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Order summary card</title>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .attribution {
             font-size: 11px;
@@ -22,23 +22,36 @@
 
 <body>
     <section class="summary">
-        <div class="imagenCabecera">
-            <!-- imagen -->
+        <div class="imagen-cabecera">
+            <img class="hero" src="images/illustration-hero.svg" alt="">
         </div>
         <article class="contenido-titulo-detalles">
             <div class="titulo">
-                <!-- titulo -->
+                <h2>Order Summary</h2>
             </div>
             <div class="detalles">
-                <!-- detalles -->
+                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
             </div>
         </article>
-        <section class="plan-anual">
-            <!-- plan -->
+        <section class="plan-anual contenedor">
+            <div class="icono-plan">
+                <div class="icono"><img src="images/icon-music.svg" alt="icono de musica"></div>
+                <div class="plan-precio">
+                    <span>
+                        Annual Plan
+                   </span>
+                    <p>
+                        $59.99/year
+                    </p>
+                </div>
+            </div>
+            <div class="change">
+                <a href="#">change</a>
+            </div>
         </section>
-        <section class="contenido-pago-cancelar">
-            <button class="pago"></button>
-            <button class="cancelar"></button>
+        <section class="contenido-pago-cancelar contenedor">
+            <a href="#" class="pago">Proceed to Payment</a>
+            <a href="#" class="cancelar">Cancel Order</a>
         </section>
     </section>
     <div class="attribution">
